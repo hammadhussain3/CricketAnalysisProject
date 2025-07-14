@@ -154,6 +154,7 @@ try:
     logger.debug("Configuring Flask...")
     app.config['MAX_CONTENT_LENGTH'] = config.MAX_CONTENT_LENGTH
     app.config['UPLOAD_FOLDER'] = config.UPLOAD_FOLDER
+    app.config['BASE_DIR'] = config.BASE_DIR
     app.config['SQLALCHEMY_DATABASE_URI'] = config.DATABASE_URI
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
